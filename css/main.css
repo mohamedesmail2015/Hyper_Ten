@@ -286,7 +286,6 @@ button:focus {
   padding: 10px 3px;
   background-color: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
-
 }
 .suggest-slider li {
   margin: 0px 7px;
@@ -299,16 +298,9 @@ button:focus {
   }
 }
 
-.suggest-slider li .card {
-  height: 130px;
-  width: 170px;
+.suggest-slider li  img {
   border-radius: 15px;
-  background-color: #ffffff;
-}
-
-.suggest-slider li .card img {
-  height: 100%;
-  border-radius: 15px;
+  height: 150px;
 }
 
 /* الاسهم */
