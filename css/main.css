@@ -154,11 +154,114 @@ button:focus {
   background: var(--primary);
 }
 
-/*****  slide START  *****/
-.carousel-item img {
-  height: 300px;
+/* START banner slid */
+/* banner اولا */
+.banner-part {
+  padding: 25px 0px 60px;
+}
+
+.banner-category {
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.banner-category-list {
+  position: relative;
+  padding: 0px 20px 7px;
+}
+
+@media (max-width: 767px) {
+  .banner-category-list {
+    display: none;
+  }
+}
+
+.banner-category-item:hover .banner-category-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.banner-category-item:last-child {
+  border-bottom: none;
+}
+
+.banner-category-item a {
   width: 100%;
-  margin: 20px 0 0 0;
+  font-size: 15px;
+  color: var(--text);
+  padding: 5px 5px 0;
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transition: all linear .3s;
+}
+
+.banner-category-item a i {
+  font-size: 20px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.banner-category-dropdown {
+  position: absolute;
+  max-width: fit-content;
+  top: 0px;
+  right: 240px;
+  height: 100%;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--white);
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear .3s;
+  box-shadow: -15px 15px 25px 0px rgba(0, 0, 0, 0.08);
+}
+
+.banner-category-dropdown h5 {
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--border);
+}
+
+.banner-sub-category {
+  height: 384px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.banner-sub-category ul {
+  margin-left: 20px;
+}
+
+.banner-sub-category ul:last-child {
+  margin-left: 0px;
+}
+
+.banner-sub-category ul li {
+  border-bottom: 1px solid var(--border);
+}
+
+.banner-sub-category ul li:last-child {
+  border-bottom: none;
+}
+
+.banner-sub-category ul li a {
+  width: 180px;
+  white-space: nowrap;
+}
+
+.banner-sub-category ul li a::before {
+  display: none;
+}
+
+/*****  slide START  ثانيا *****/
+.carousel-item img {
+  height: 425px;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -179,6 +282,12 @@ button:focus {
 /*****  slide END  *****/
 
 /***** SUGGEST PART START السليد الكرت *****/
+.suggest-slider {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
+
+}
 .suggest-slider li {
   margin: 0px 7px;
   padding: 0;
@@ -191,11 +300,15 @@ button:focus {
 }
 
 .suggest-slider li .card {
-  height: 200px;
+  height: 130px;
+  width: 170px;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 .suggest-slider li .card img {
-  height: 100px;
+  height: 100%;
+  border-radius: 15px;
 }
 
 /* الاسهم */
@@ -242,6 +355,7 @@ button:focus {
 }
 
 /***** SUGGEST PART END السليد الكرت *****/
+
 .suggest-slider .col {
   margin: auto 7px;
 }
@@ -378,34 +492,6 @@ button:focus {
   border-top: 1px solid var(--border);
 }
 
-.product-rating {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3px;
-}
-
-.product-rating i,
-.product-rating a {
-  font-size: 14px;
-  margin: 0px 2px;
-  color: var(--gray);
-}
-
-.product-rating a {
-  white-space: nowrap;
-  transition: all linear 0.3s;
-}
-
-.product-rating a:hover {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-.product-rating .active {
-  color: var(--yellow);
-}
-
 .product-name {
   margin-bottom: 3px;
   text-transform: capitalize;
@@ -428,18 +514,17 @@ button:focus {
   margin-bottom: 13px;
 }
 
-.product-price del {
-  color: var(--red);
-  margin-right: 8px;
-}
-
 .product-price span {
   color: var(--primary);
   white-space: nowrap;
+
 }
 
-.product-price span small {
-  font-weight: 400;
+.product-price del {
+  color: var(--red);
+  margin-right: 8px;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .product-add {
@@ -475,10 +560,10 @@ button:focus {
 }
 
 .product-action button i {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   font-size: 14px;
-  line-height: 35px;
+  line-height: 25px;
   border-radius: 6px;
   text-align: center;
   display: inline-block;
@@ -518,7 +603,7 @@ button:focus {
 
 /* CARDS img-brand END  */
 
-/* *********** footerr *********** */
+/* *********** footerr Start *********** */
 
 .footer {
   background-color: #fcfcfc;
@@ -533,10 +618,10 @@ button:focus {
 }
 
 .footer .all-categories li a {
-  margin: 10px 0 0 20px;
+  margin-left: 20px;
   position: relative;
   color: #212529;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .footer .all-categories li a:hover {
@@ -556,11 +641,18 @@ button:focus {
 /* هيبر تن / حسابي */
 .footer .box h3 {
   color: #212529;
-  font-size: 22px;
-  font-weight: 700;
-  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px;
   text-align: start;
   justify-content: start;
+}
+
+@media (max-width: 767px) {
+  .footer .box h3 {
+    margin: 0;
+    padding: 10px 0 0;
+  }
 }
 
 .footer .box .line .info a {
@@ -568,7 +660,7 @@ button:focus {
   position: relative;
   text-align: start;
   justify-content: start;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .footer .box .line .info a:hover {
@@ -602,12 +694,17 @@ button:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
   border-radius: 5px;
   border: solid 1px #8f8c8c;
   transition: var(--main-transition);
+}
+
+.footer .box .social li a:hover {
+  color: white;
+  background-color: var(--primary);
 }
 
 /* حمل التطبيق */
@@ -615,35 +712,6 @@ button:focus {
   width: 80%;
   height: 50px;
   margin: 0 0 10px;
-}
-
-/* copyright */
-.footer .copyright {
-  display: flex;
-  text-align: end;
-  justify-content: space-between;
-  padding: 20px 10px;
-  background-color: #ffffff;
-  border-top: 1px solid #ededed;
-}
-
-.footer .copyright .copyright-imgs img {
-  height: 50px;
-  border-radius: 10px;
-  margin: auto 10px;
-}
-
-.footer .copyright .copyright-text {
-  font-size: 13px;
-  margin: auto 10px;
-}
-
-.footer .copyright .copyright-text h5 {
-  color: #222222;
-}
-
-.footer .copyright .copyright-text p {
-  color: #ababab;
 }
 
 @media (max-width: 767px) {
@@ -661,4 +729,27 @@ button:focus {
     text-align: start;
     justify-content: start;
   }
+
+  .footer .box .line img {
+    width: 50%;
+  }
+}
+
+/* copyright */
+.footer .copyright {
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #ededed;
+}
+
+.footer .copyright-title {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+}
+
+.footer .copyright-taxes h5,
+.footer .copyright-text h5 {
+  color: #222222;
+  font-size: 15px;
 }

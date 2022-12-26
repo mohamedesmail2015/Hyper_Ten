@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="fonts/icofont/icofont.min.css" />
     <link rel="stylesheet" href="fonts/fontawesome/fontawesome.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Noto+Sans+Arabic:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Noto+Sans+Arabic:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 
 
@@ -19,7 +23,6 @@
     <link rel="stylesheet" href="vendor/venobox/venobox.min.css" />
     <link rel="stylesheet" href="vendor/slickslider/slick.min.css" />
     <link rel="stylesheet" href="vendor/niceselect/nice-select.min.css" />
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
 
     <!-- bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,7 +36,7 @@
 
     <!-- START TITLE -->
     <title>هيبر تن</title>
-    <link rel="icon" href="images/logo.png" />
+    <link rel="icon" href="images/Hyper 10 logo-04.png" />
     <!-- End TITLE -->
 </head>
 
@@ -51,34 +54,73 @@
             <div class="header-content">
                 <!-- اولا في شاشه الموبيل -->
                 <div class="header-media-group">
-                    <button class="header-user"><img src="images/user.png" alt="user"></button>
-                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <button class="header-user"><i class="fa-solid fa-bars"></i></button>
+                    <a href="index.html"> <img src="images/Hyper 10 logo-01.png" alt="logo">
+                    </a>
                     <button class="header-src"><i class="fas fa-search"></i></button>
                 </div>
 
                 <!-- ثانيا ف الشاشات الكبيره -->
+
                 <a href="index.html" class="header-logo">
-                    <img src="images/logo.png" alt="logo">
+                    <img src="images/Hyper 10 logo-01.png" alt="logo">
                 </a>
 
                 <form class="header-form">
                     <input type="text" placeholder=" ... ابحث عن أي شيء">
                     <button><i class="fas fa-search"></i></button>
                 </form>
+                <!-- <button class="btn btn-primary">البحث</button> -->
 
-                <div class="header-widget-group">
-                    <a class="header-widget header-cart" title="Cartlist">
-                        <i class="fas fa-shopping-basket"></i>
-                        <span>طلبك مش موجود بلغنا</h2>
-                    </a>
-                </div>
+
+
+
+                <ul class="navbar-list">
+                    <li class="navbar-item dropdown">
+                        <a href="login.html" class="header-widget" title="My Account">
+                            <i class="fa-regular fa-user"></i>
+                            <span>تسجيل الدخول</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                         </a>
+                        <ul class="dropdown-position-list">
+                            <p><a href="#">تسجيل الدخول</a></p>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-regular fa-user"></i>
+                                    الحساب
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i> الطلبات
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa-regular fa-heart"></i> المنتجات المحفوظه
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <a class="header-widget header-cart" title="Cartlist">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>سله التسوق</h2>
+                </a>
+
+                <!-- <a href="login.html" class="header-widget" title="My Account">
+                    <i class="fa-solid fa-question"></i><span>المساعده</span>
+                </a> -->
             </div>
         </div>
     </header>
     <!-- HEADER PART END -->
 
     <!-- NAVBAR PART START الهيدر اللي من تحت -->
-    <nav class="navbar-part">
+    <!-- <nav class="navbar-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -109,13 +151,10 @@
                         <div class="header-widget-group">
                             <button class="header-widget header-cart" title="Cartlist">
                                 <i class="fas fa-shopping-basket"></i>
-                                <!-- <sup>9+</sup>
-                                <span>السعر الكلي<small>345.00 جنيها</small></span> -->
                             </button>
 
                             <a href="wishlist.html" class="header-widget" title="Wishlist">
                                 <i class="fas fa-heart"></i>
-                                <!-- <sup>0</sup> -->
                             </a>
 
                             <a href="login.html" class="header-widget" title="My Account">
@@ -127,7 +166,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- NAVBAR PART END الهيدر اللي من تحت -->
 
     <!-- NAV SIDEBAR PART موبيل START -->
@@ -141,20 +180,26 @@
                 <li>
                     <a class="nav-link dropdown-link" href="#"><i class="icofont-home"></i> الرئيسيه </a>
                     <ul class="dropdown-list">
-                        <li><a href="home-standard.html">الرئيسيه</a></li>
+                        <li><a href="#">البقالة و الأطعمة المعلبة</a></li>
+                        <li><a href="#">الألبان والجبن</a></li>
+                        <li><a href="#">العطارة و التوابل</a></li>
+                        <li><a href="#"> العصائر والمشروبات</a></li>
+                        <li><a href="#"> اللحوم والدواجن</a></li>
+                        <li><a href="#"> الأطعمة المجمدة</a></li>
+                        <li><a href="#"> الفواكه والخضروات</a></li>
+                        <li><a href="#"> التسالي والمكسرات</a></li>
+                        <li><a href="#"> المنظفات والورقيات</a></li>
+                        <li><a href="#"> العناية بالمرآة</a></li>
+                        <li><a href="#"> العناية بالرجل</a></li>
+                        <li><a href="#">منتجات العناية بالأسنان</a></li>
+                        <li><a href="#"> منتجات الأطفال</a></li>
                     </ul>
                 </li>
                 <li>
                     <a class="nav-link dropdown-link" href="#"><i class="icofont-food-cart"></i>جميع الاقسام</a>
-                    <ul class="dropdown-list">
-                        <li><a href="#">shop 5 column</a></li>
-                    </ul>
                 </li>
                 <li>
                     <a class="nav-link dropdown-link" href="#"><i class="icofont-page"></i>الماركات</a>
-                    <ul class="dropdown-list">
-                        <li><a href="#">product tab</a></li>
-                    </ul>
                 </li>
             </ul>
 
@@ -293,55 +338,365 @@
     </aside>
     <!-- CART SIDEBAR PART END  البوبب اللي بتظهر من الجنب-->
 
+    <!-- BANNER && slide PART START -->
+    <section class="banner-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="banner-category">
+                        <ul class="banner-category-list">
 
-    <!-- slide START  -->
-    <div id="carouselExampleIndicators" class="container carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="dot active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dot"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dot"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="dot"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="dot"
-                aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="dot"
-                aria-label="Slide 6"></button>
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-vegetable"></i>
+                                    <span>خضروات</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الخضار</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">جزر</a></li>
+                                            <li><a href="#">بروكلي</a></li>
+                                            <li><a href="#">نبات الهليون</a></li>
+                                            <li><a href="#">قرنبيط</a></li>
+                                            <li><a href="#">خيار</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">الباذنجان</a></li>
+                                            <li><a href="#">فلفل أخضر</a></li>
+                                            <li><a href="#">خَسّ</a></li>
+                                            <li><a href="#">الفطر</a></li>
+                                            <li><a href="#">بصل</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">البطاطس</a></li>
+                                            <li><a href="#">يقطين</a></li>
+                                            <li><a href="#">طماطم</a></li>
+                                            <li><a href="#">جذور الشمندر</a></li>
+                                            <li><a href="#">كوسة</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">الفجل</a></li>
+                                            <li><a href="#">خرشوف</a></li>
+                                            <li><a href="#">كرنب</a></li>
+                                            <li><a href="#">كرفس</a></li>
+                                            <li><a href="#">بَقدونس</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-groceries"></i>
+                                    <span>البقالة</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم البقالة</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">سمنة</a></li>
+                                            <li><a href="#">أرز</a></li>
+                                            <li><a href="#">رغيف الخبز</a></li>
+                                            <li><a href="#">مكرونه</a></li>
+                                            <li><a href="#">زيت الطهي</a></li>
+                                        </ul>
+                                        <ul>
+
+                                            <li><a href="#">جبنه</a></li>
+                                            <li><a href="#">زبادي</a></li>
+                                            <li><a href="#">بصل</a></li>
+                                            <li><a href="#">ثوم</a></li>
+                                            <li><a href="#">نبضات</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">حساء</a></li>
+                                            <li><a href="#">ملح</a></li>
+                                            <li><a href="#">فلفل</a></li>
+                                            <li><a href="#">أعشاب</a></li>
+                                            <li><a href="#">سكر</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-fruit"></i>
+                                    <span>الفاكهة</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الفاكهة</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">تفاح</a></li>
+                                            <li><a href="#">برتقال</a></li>
+                                            <li><a href="#">بطيخ</a></li>
+                                            <li><a href="#">كُمَّثرَى</a></li>
+                                            <li><a href="#">كرز</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">الفراولة</a></li>
+                                            <li><a href="#">زليقة</a></li>
+                                            <li><a href="#">عنب</a></li>
+                                            <li><a href="#">مانجو</a></li>
+                                            <li><a href="#">توت بري</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-dairy-products"></i>
+                                    <span>مزارع الألبان</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم مزارع الألبان</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">بيض</a></li>
+                                            <li><a href="#">حليب</a></li>
+                                            <li><a href="#">جبنه</a></li>
+                                            <li><a href="#">سمنة</a></li>
+                                            <li><a href="#">قشطه</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-crab"></i>
+                                    <span>أطعمة بحرية</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الأطعمة البحرية </h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">سرطان البحر</a></li>
+                                            <li><a href="#">أخطبوط</a></li>
+                                            <li><a href="#">جمبري</a></li>
+                                            <li><a href="#">محار</a></li>
+                                            <li><a href="#">حبار</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-salad"></i>
+                                    <span>أغذية الحمية</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الأغذية الحمية</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">الفول السوداني</a></li>
+                                            <li><a href="#">زبادي</a></li>
+                                            <li><a href="#">خل</a></li>
+                                            <li><a href="#">بذور</a></li>
+                                            <li><a href="#">جوز الهند</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-dried-fruit"></i>
+                                    <span>الأطعمة الجافة</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الأطعمة الجافة</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">لوز</a></li>
+                                            <li><a href="#">الفول السوداني</a></li>
+                                            <li><a href="#">زبيب</a></li>
+                                            <li><a href="#">جوز</a></li>
+                                            <li><a href="#">فستق</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-fast-food"></i>
+                                    <span>وجبات سريعة</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الوجبات سريعة</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">برغر</a></li>
+                                            <li><a href="#">بيتزا</a></li>
+                                            <li><a href="#">بطاطس مقلية</a></li>
+                                            <li><a href="#">تشيكن</a></li>
+                                            <li><a href="#">الحلوى</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-cheers"></i>
+                                    <span>مشروبات</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم المشروبات</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">نبيذ</a></li>
+                                            <li><a href="#">قهوة</a></li>
+                                            <li><a href="#">عصير الليمون</a></li>
+                                            <li><a href="#">شوكولاتة</a></li>
+                                            <li><a href="#">اللبن المخفوق</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-barbecue"></i>
+                                    <span>اللحوم</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم اللحوم</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+
+                                            <li><a href="#">لحم بقري</a></li>
+                                            <li><a href="#">لحم الضأن</a></li>
+                                            <li><a href="#">فرخة</a></li>
+                                            <li><a href="#">ديك رومى</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-fish"></i>
+                                    <span>اسماك</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الاسماك</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">بلو مارلين</a></li>
+                                            <li><a href="#">تخبط</a></li>
+                                            <li><a href="#">هوجفيش</a></li>
+                                            <li><a href="#">ماكو شارك</a></li>
+                                            <li><a href="#">بومبانو</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-fast-food"></i>
+                                    <span>وجبات سريعة</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم الوجبات سريعة</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">برغر</a></li>
+                                            <li><a href="#">بيتزا</a></li>
+                                            <li><a href="#">بطاطس مقلية</a></li>
+                                            <li><a href="#">تشيكن</a></li>
+                                            <li><a href="#">الحلوى</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="banner-category-item">
+                                <a href="#">
+                                    <i class="flaticon-cheers"></i>
+                                    <span>مشروبات</span>
+                                </a>
+                                <div class="banner-category-dropdown">
+                                    <h5>قسم المشروبات</h5>
+                                    <div class="banner-sub-category">
+                                        <ul>
+                                            <li><a href="#">نبيذ</a></li>
+                                            <li><a href="#">قهوة</a></li>
+                                            <li><a href="#">عصير الليمون</a></li>
+                                            <li><a href="#">شوكولاتة</a></li>
+                                            <li><a href="#">اللبن المخفوق</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- slide START  -->
+                            <div id="carouselExampleIndicators" class="container carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="dot active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" class="dot" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" class="dot" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3" class="dot" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="4" class="dot" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="5" class="dot" aria-label="Slide 6"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/slid 1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/slid 2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/slid 3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/brand/01.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/brand/02.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/brand/03.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- slide END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/slid 1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/slid 2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/slid 3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/brand/01.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/brand/02.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/brand/03.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- slide END -->
+    </section>
+    <!-- BANNER && slide PART END -->
 
     <!-- CARDS SLIDER START -->
     <section class="section suggest-part pt-5">
@@ -350,73 +705,49 @@
                 <li>
                     <div class="card text-center">
                         <img src="images/slid 1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>المنظفات والورقيات</h5>
-                            <p class="card-text">(0 منتج )</p>
-                        </div>
+                       
                     </div>
                 </li>
                 <li>
                     <div class="card text-center">
                         <img src="images/slid 2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>العناية بالمرآة</h5>
-                            <p>(0 منتج )</p>
-                        </div>
+                       
                     </div>
                 </li>
                 <li>
                     <div class="card text-center">
                         <img src="images/slid 3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>الخصومات والعروض</h5>
-                            <p>(0 منتج )</p>
-                        </div>
+                        
                     </div>
                 </li>
                 <li>
                     <div class="card text-center">
                         <img src="images/slid 4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>منتجات الأطفال</h5>
-                            <p>(0 منتج )</p>
-                        </div>
+                        
                     </div>
                 </li>
                 <li>
                     <div class="card text-center">
                         <img src="images/blog/01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>التسالي والمكسرات</h5>
-                            <p>(0 منتج )</p>
-                        </div>
+                       
                     </div>
                 </li>
                 <li>
                     <div class="card text-center">
                         <img src="images/blog/02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>منتجات العناية بالأسنان</h5>
-                            <p>(0 منتج )</p>
-                        </div>
+                       
                     </div>
                 </li>
                 <li>
                     <div class="card text-center">
                         <img src="images/blog/03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>وصل حديثًا</h5>
-                            <p>(0 منتج )</p>
-                        </div>
+                       
                     </div>
                 </li>
                 <li>
                     <div class="card text-center">
                         <img src="images/blog/04.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>الفواكه والخضروات</h5>
-                            <p>(0 منتج )</p>
-                        </div>
+                       
                     </div>
                 </li>
 
@@ -460,14 +791,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -514,14 +837,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -567,14 +882,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -621,14 +928,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -674,14 +973,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -728,14 +1019,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -781,14 +1064,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -835,14 +1110,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -888,14 +1155,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -942,14 +1201,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -985,7 +1236,7 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/slid 3.jpg" alt="">
+            <img src="images/8.jpg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
@@ -1017,14 +1268,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">زيت عافيه</a>
                             </h5>
@@ -1071,14 +1314,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">زيت عافيه</a>
                             </h5>
@@ -1125,14 +1360,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">زيت عافيه</a>
                             </h5>
@@ -1179,14 +1406,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">زيت عافيه</a>
                             </h5>
@@ -1232,174 +1451,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
-                            <h5 class="product-name">
-                                <a href="#">زيت عافيه</a>
-                            </h5>
-                            <h5>كيلو جرام</h5>
-
-                            <h6 class="product-price">
-                                <span> <small>السعر/</small> 50 جنية </span>
-                                <del> 60 جنية </del>
-                            </h6>
-                            <button class="product-add" title="Add to Cart">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>add</span>
-                            </button>
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="icofont-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1" />
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="icofont-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="product-card">
-                        <div class="product-media">
-                            <div class="product-label">
-                                <label class="label-text sale">sale</label>
-                                <label class="label-text new">new</label>
-                            </div>
-                            <button class="product-wish wish">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <a class="product-image" href="product-video.html">
-                                <img src="images/زيت.jpg" alt="product" />
-                            </a>
-                            <div class="product-widget">
-                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
-                                    data-bs-target="#product-view"></a>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
-                            <h5 class="product-name">
-                                <a href="#">زيت عافيه</a>
-                            </h5>
-                            <h5>كيلو جرام</h5>
-
-                            <h6 class="product-price">
-                                <span> <small>السعر/</small> 50 جنية </span>
-                                <del> 60 جنية </del>
-                            </h6>
-                            <button class="product-add" title="Add to Cart">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>add</span>
-                            </button>
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="icofont-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1" />
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="icofont-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="product-card">
-                        <div class="product-media">
-                            <div class="product-label">
-                                <label class="label-text sale">sale</label>
-                            </div>
-                            <button class="product-wish wish">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <a class="product-image" href="product-video.html">
-                                <img src="images/زيت.jpg" alt="product" />
-                            </a>
-                            <div class="product-widget">
-                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
-                                    data-bs-target="#product-view"></a>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
-                            <h5 class="product-name">
-                                <a href="#">زيت عافيه</a>
-                            </h5>
-                            <h5>كيلو جرام</h5>
-
-                            <h6 class="product-price">
-                                <span> <small>السعر/</small> 50 جنية </span>
-                                <del> 60 جنية </del>
-                            </h6>
-                            <button class="product-add" title="Add to Cart">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>add</span>
-                            </button>
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="icofont-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1" />
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="icofont-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="product-card">
-                        <div class="product-media">
-                            <div class="product-label">
-                                <label class="label-text sale">sale</label>
-                            </div>
-                            <button class="product-wish wish">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <a class="product-image" href="product-video.html">
-                                <img src="images/زيت.jpg" alt="product" />
-                            </a>
-                            <div class="product-widget">
-                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
-                                    data-bs-target="#product-view"></a>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">زيت عافيه</a>
                             </h5>
@@ -1446,14 +1497,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">زيت عافيه</a>
                             </h5>
@@ -1499,14 +1542,142 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
+                            <h5 class="product-name">
+                                <a href="#">زيت عافيه</a>
+                            </h5>
+                            <h5>كيلو جرام</h5>
+
+                            <h6 class="product-price">
+                                <span> <small>السعر/</small> 50 جنية </span>
+                                <del> 60 جنية </del>
+                            </h6>
+                            <button class="product-add" title="Add to Cart">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>add</span>
+                            </button>
+                            <div class="product-action">
+                                <button class="action-minus" title="Quantity Minus">
+                                    <i class="icofont-minus"></i>
+                                </button>
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                    value="1" />
+                                <button class="action-plus" title="Quantity Plus">
+                                    <i class="icofont-plus"></i>
+                                </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <div class="product-label">
+                                <label class="label-text sale">sale</label>
+                            </div>
+                            <button class="product-wish wish">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a class="product-image" href="product-video.html">
+                                <img src="images/زيت.jpg" alt="product" />
+                            </a>
+                            <div class="product-widget">
+                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
+                                    data-bs-target="#product-view"></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="product-name">
+                                <a href="#">زيت عافيه</a>
+                            </h5>
+                            <h5>كيلو جرام</h5>
+
+                            <h6 class="product-price">
+                                <span> <small>السعر/</small> 50 جنية </span>
+                                <del> 60 جنية </del>
+                            </h6>
+                            <button class="product-add" title="Add to Cart">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>add</span>
+                            </button>
+                            <div class="product-action">
+                                <button class="action-minus" title="Quantity Minus">
+                                    <i class="icofont-minus"></i>
+                                </button>
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                    value="1" />
+                                <button class="action-plus" title="Quantity Plus">
+                                    <i class="icofont-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <div class="product-label">
+                                <label class="label-text sale">sale</label>
+                                <label class="label-text new">new</label>
+                            </div>
+                            <button class="product-wish wish">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a class="product-image" href="product-video.html">
+                                <img src="images/زيت.jpg" alt="product" />
+                            </a>
+                            <div class="product-widget">
+                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
+                                    data-bs-target="#product-view"></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="product-name">
+                                <a href="#">زيت عافيه</a>
+                            </h5>
+                            <h5>كيلو جرام</h5>
+
+                            <h6 class="product-price">
+                                <span> <small>السعر/</small> 50 جنية </span>
+                                <del> 60 جنية </del>
+                            </h6>
+                            <button class="product-add" title="Add to Cart">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>add</span>
+                            </button>
+                            <div class="product-action">
+                                <button class="action-minus" title="Quantity Minus">
+                                    <i class="icofont-minus"></i>
+                                </button>
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                    value="1" />
+                                <button class="action-plus" title="Quantity Plus">
+                                    <i class="icofont-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <div class="product-label">
+                                <label class="label-text sale">sale</label>
+                            </div>
+                            <button class="product-wish wish">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a class="product-image" href="product-video.html">
+                                <img src="images/زيت.jpg" alt="product" />
+                            </a>
+                            <div class="product-widget">
+                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
+                                    data-bs-target="#product-view"></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
                             <h5 class="product-name">
                                 <a href="#">زيت عافيه</a>
                             </h5>
@@ -1542,7 +1713,7 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/الخضار والفاكهه.jpg" alt="">
+            <img src="images/7.jpg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
@@ -1574,14 +1745,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -1628,14 +1791,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -1682,14 +1837,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -1736,14 +1883,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">لوبيا</a>
                             </h5>
@@ -1789,14 +1928,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -1844,14 +1975,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -1898,14 +2021,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -1951,14 +2066,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -2005,14 +2112,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">لوبيا</a>
                             </h5>
@@ -2058,14 +2157,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -2102,7 +2193,7 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/دقيق.jpg" alt="">
+            <img src="images/6.jpg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
@@ -2136,14 +2227,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">تفاح</a>
                             </h5>
@@ -2189,121 +2272,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
-                            <h5 class="product-name">
-                                <a href="#">تفاح</a>
-                            </h5>
-                            <h5>كيلو جرام</h5>
-
-                            <h6 class="product-price">
-                                <span> <small>السعر/</small> 50 جنية </span>
-                                <del> 60 جنية </del>
-                            </h6>
-                            <button class="product-add" title="Add to Cart">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>add</span>
-                            </button>
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="icofont-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1" />
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="icofont-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="product-card">
-                        <div class="product-media">
-                            <div class="product-label">
-                                <label class="label-text sale">sale</label>
-                                <label class="label-text new">new</label>
-                            </div>
-                            <button class="product-wish wish">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <a class="product-image" href="product-video.html">
-                                <img src="images/تفاح.jpg" alt="product" />
-                            </a>
-                            <div class="product-widget">
-                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
-                                    data-bs-target="#product-view"></a>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
-                            <h5 class="product-name">
-                                <a href="#">تفاح</a>
-                            </h5>
-                            <h5>كيلو جرام</h5>
-
-                            <h6 class="product-price">
-                                <span> <small>السعر/</small> 50 جنية </span>
-                                <del> 60 جنية </del>
-                            </h6>
-                            <button class="product-add" title="Add to Cart">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>add</span>
-                            </button>
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="icofont-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1" />
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="icofont-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="product-card">
-                        <div class="product-media">
-                            <div class="product-label">
-                                <label class="label-text sale">sale</label>
-                            </div>
-                            <button class="product-wish wish">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <a class="product-image" href="product-video.html">
-                                <img src="images/تفاح.jpg" alt="product" />
-                            </a>
-                            <div class="product-widget">
-                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
-                                    data-bs-target="#product-view"></a>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">تفاح</a>
                             </h5>
@@ -2350,14 +2318,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">تفاح</a>
                             </h5>
@@ -2403,121 +2363,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
-                            <h5 class="product-name">
-                                <a href="#">تفاح</a>
-                            </h5>
-                            <h5>كيلو جرام</h5>
-
-                            <h6 class="product-price">
-                                <span> <small>السعر/</small> 50 جنية </span>
-                                <del> 60 جنية </del>
-                            </h6>
-                            <button class="product-add" title="Add to Cart">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>add</span>
-                            </button>
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="icofont-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1" />
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="icofont-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="product-card">
-                        <div class="product-media">
-                            <div class="product-label">
-                                <label class="label-text sale">sale</label>
-                                <label class="label-text new">new</label>
-                            </div>
-                            <button class="product-wish wish">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <a class="product-image" href="product-video.html">
-                                <img src="images/تفاح.jpg" alt="product" />
-                            </a>
-                            <div class="product-widget">
-                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
-                                    data-bs-target="#product-view"></a>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
-                            <h5 class="product-name">
-                                <a href="#">تفاح</a>
-                            </h5>
-                            <h5>كيلو جرام</h5>
-
-                            <h6 class="product-price">
-                                <span> <small>السعر/</small> 50 جنية </span>
-                                <del> 60 جنية </del>
-                            </h6>
-                            <button class="product-add" title="Add to Cart">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>add</span>
-                            </button>
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="icofont-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1" />
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="icofont-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="product-card">
-                        <div class="product-media">
-                            <div class="product-label">
-                                <label class="label-text sale">sale</label>
-                            </div>
-                            <button class="product-wish wish">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <a class="product-image" href="product-video.html">
-                                <img src="images/تفاح.jpg" alt="product" />
-                            </a>
-                            <div class="product-widget">
-                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
-                                    data-bs-target="#product-view"></a>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">تفاح</a>
                             </h5>
@@ -2564,14 +2409,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">تفاح</a>
                             </h5>
@@ -2617,14 +2454,188 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
+                            <h5 class="product-name">
+                                <a href="#">تفاح</a>
+                            </h5>
+                            <h5>كيلو جرام</h5>
+
+                            <h6 class="product-price">
+                                <span> <small>السعر/</small> 50 جنية </span>
+                                <del> 60 جنية </del>
+                            </h6>
+                            <button class="product-add" title="Add to Cart">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>add</span>
+                            </button>
+                            <div class="product-action">
+                                <button class="action-minus" title="Quantity Minus">
+                                    <i class="icofont-minus"></i>
+                                </button>
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                    value="1" />
+                                <button class="action-plus" title="Quantity Plus">
+                                    <i class="icofont-plus"></i>
+                                </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <div class="product-label">
+                                <label class="label-text sale">sale</label>
+                                <label class="label-text new">new</label>
+                            </div>
+                            <button class="product-wish wish">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a class="product-image" href="product-video.html">
+                                <img src="images/تفاح.jpg" alt="product" />
+                            </a>
+                            <div class="product-widget">
+                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
+                                    data-bs-target="#product-view"></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="product-name">
+                                <a href="#">تفاح</a>
+                            </h5>
+                            <h5>كيلو جرام</h5>
+
+                            <h6 class="product-price">
+                                <span> <small>السعر/</small> 50 جنية </span>
+                                <del> 60 جنية </del>
+                            </h6>
+                            <button class="product-add" title="Add to Cart">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>add</span>
+                            </button>
+                            <div class="product-action">
+                                <button class="action-minus" title="Quantity Minus">
+                                    <i class="icofont-minus"></i>
+                                </button>
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                    value="1" />
+                                <button class="action-plus" title="Quantity Plus">
+                                    <i class="icofont-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <div class="product-label">
+                                <label class="label-text sale">sale</label>
+                            </div>
+                            <button class="product-wish wish">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a class="product-image" href="product-video.html">
+                                <img src="images/تفاح.jpg" alt="product" />
+                            </a>
+                            <div class="product-widget">
+                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
+                                    data-bs-target="#product-view"></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="product-name">
+                                <a href="#">تفاح</a>
+                            </h5>
+                            <h5>كيلو جرام</h5>
+
+                            <h6 class="product-price">
+                                <span> <small>السعر/</small> 50 جنية </span>
+                                <del> 60 جنية </del>
+                            </h6>
+                            <button class="product-add" title="Add to Cart">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>add</span>
+                            </button>
+                            <div class="product-action">
+                                <button class="action-minus" title="Quantity Minus">
+                                    <i class="icofont-minus"></i>
+                                </button>
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                    value="1" />
+                                <button class="action-plus" title="Quantity Plus">
+                                    <i class="icofont-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <div class="product-label">
+                                <label class="label-text sale">sale</label>
+                                <label class="label-text new">new</label>
+                            </div>
+                            <button class="product-wish wish">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a class="product-image" href="product-video.html">
+                                <img src="images/تفاح.jpg" alt="product" />
+                            </a>
+                            <div class="product-widget">
+                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
+                                    data-bs-target="#product-view"></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="product-name">
+                                <a href="#">تفاح</a>
+                            </h5>
+                            <h5>كيلو جرام</h5>
+
+                            <h6 class="product-price">
+                                <span> <small>السعر/</small> 50 جنية </span>
+                                <del> 60 جنية </del>
+                            </h6>
+                            <button class="product-add" title="Add to Cart">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>add</span>
+                            </button>
+                            <div class="product-action">
+                                <button class="action-minus" title="Quantity Minus">
+                                    <i class="icofont-minus"></i>
+                                </button>
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                    value="1" />
+                                <button class="action-plus" title="Quantity Plus">
+                                    <i class="icofont-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <div class="product-media">
+                            <div class="product-label">
+                                <label class="label-text sale">sale</label>
+                            </div>
+                            <button class="product-wish wish">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <a class="product-image" href="product-video.html">
+                                <img src="images/تفاح.jpg" alt="product" />
+                            </a>
+                            <div class="product-widget">
+                                <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal"
+                                    data-bs-target="#product-view"></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
                             <h5 class="product-name">
                                 <a href="#">تفاح</a>
                             </h5>
@@ -2660,7 +2671,7 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/slid 3.jpg" alt="">
+            <img src="images/5.jpg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
@@ -2692,14 +2703,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -2746,14 +2749,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -2800,14 +2795,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -2854,14 +2841,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">لوبيا</a>
                             </h5>
@@ -2907,14 +2886,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -2962,14 +2933,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3016,14 +2979,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3069,14 +3024,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3123,14 +3070,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">لوبيا</a>
                             </h5>
@@ -3176,14 +3115,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -3220,7 +3151,7 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/slid 1.jpg" alt="">
+            <img src="images/3.jpg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
@@ -3252,14 +3183,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3306,14 +3229,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3360,14 +3275,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3414,14 +3321,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">لوبيا</a>
                             </h5>
@@ -3467,14 +3366,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -3522,14 +3413,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3576,14 +3459,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3629,14 +3504,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3683,14 +3550,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">لوبيا</a>
                             </h5>
@@ -3736,14 +3595,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -3780,7 +3631,7 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/blog/05.jpg" alt="">
+            <img src="images/1.jpeg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
@@ -3812,14 +3663,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3866,14 +3709,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3920,14 +3755,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -3974,14 +3801,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4027,14 +3846,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4081,14 +3892,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4135,14 +3938,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4189,14 +3984,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4243,14 +4030,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">لوبيا</a>
                             </h5>
@@ -4296,14 +4075,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">بسله</a>
                             </h5>
@@ -4340,7 +4111,7 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/slid 2.jpg" alt="">
+            <img src="images/5.jpg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
@@ -4372,14 +4143,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4426,14 +4189,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4480,14 +4235,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4533,14 +4280,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4587,14 +4326,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4641,14 +4372,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4695,14 +4418,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4748,14 +4463,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4802,14 +4509,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4856,14 +4555,6 @@
                             </div>
                         </div>
                         <div class="product-content">
-                            <div class="product-rating">
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="active icofont-star"></i>
-                                <i class="icofont-star"></i>
-                                <a href="#">(3)</a>
-                            </div>
                             <h5 class="product-name">
                                 <a href="#">فول</a>
                             </h5>
@@ -4899,133 +4590,117 @@
     <!-- CARDS img-brand START -->
     <section class="container section">
         <div class="img-brand">
-            <img src="images/newsletter.jpg" alt="">
+            <img src="images/4.jpg" alt="">
         </div>
     </section>
     <!-- CARDS img-brand END -->
 
-    <!-- Start footer (11) -->
+    <!-- Start footer -->
     <div class="footer">
-        <div class="row g-0 pt-5">
-            <!-- أشهر التصنيفات -->
-            <div class="col-lg-5 col-md-6 p-3">
-                <div class="box">
-                    <h3 class="pb-2">أشهر التصنيفات</h3>
-                    <ul class="all-categories">
-                        <li class="info"><a href="#">الخضار والفاكهه</a></li>
-                        <li class="info"><a href="#">الجبن والالبان</a></li>
-                        <li class="info"><a href="#">المربي</a></li>
-                        <li class="info"><a href="#">العصائر</a></li>
-                        <li class="info"><a href="#">اللحوم</a></li>
-                        <li class="info"><a href="#">البقوليات المعلبه</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- هيبر تن -->
-            <div class="col-lg-2 col-md-6 p-3">
-                <div class="box">
-                    <h3 class="pb-2">هيبر تن</h3>
-                    <div class="line">
-                        <div class="info"><a href="#">الشروط والأحكام</a></div>
-                    </div>
-                    <div class="line">
-                        <div class="info"><a href="#">سياسة الإستبدال والإسترجاع</a></div>
-                    </div>
-                    <div class="line">
-                        <div class="info"><a href="#">الخصوصية</a></div>
+        <div class="container">
+            <div class="row g-0 pt-4">
+                <!-- أشهر التصنيفات -->
+                <div class="col-lg-5 col-md-6">
+                    <div class="box">
+                        <h3>أشهر التصنيفات</h3>
+                        <ul class="all-categories">
+                            <li class="info"><a href="#">الخضار والفاكهه</a></li>
+                            <li class="info"><a href="#">الجبن والالبان</a></li>
+                            <li class="info"><a href="#">المربي</a></li>
+                            <li class="info"><a href="#">العصائر</a></li>
+                            <li class="info"><a href="#">اللحوم</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
-            <!-- حسابي -->
-            <div class="col-lg-1 col-md-6 p-3">
-                <div class="box">
-                    <h3 class="pb-2">حسابي</h3>
-                    <div class="line">
-                        <div class="info"><a href="#">حسابي</a></div>
-                    </div>
-                    <div class="line">
-                        <div class="info"><a href="#">الطلبات</a></div>
-                    </div>
-                    <div class="line">
-                        <div class="info"><a href="#">المفضلة</a></div>
-                    </div>
+                <!-- هيبر تن -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="box">
+                        <h3>هيبر تن</h3>
+                        <div class="line">
+                            <div class="info"><a href="#">الشروط والأحكام</a></div>
+                        </div>
 
+                        <div class="line">
+                            <div class="info"><a href="#">الخصوصية</a></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- تواصل معنا -->
-            <div class="col-lg-2 col-md-6 p-3">
-                <div class="box">
-                    <h3 class="pb-2">تواصل معنا</h3>
+                <!-- حسابي -->
+                <div class="col-lg-1 col-md-6">
+                    <div class="box">
+                        <h3>حسابي</h3>
+                        <div class="line">
+                            <div class="info"><a href="#">حسابي</a></div>
+                        </div>
+                        <div class="line">
+                            <div class="info"><a href="#">الطلبات</a></div>
+                        </div>
+                        <div class="line">
+                            <div class="info"><a href="#">المفضلة</a></div>
+                        </div>
 
-                    <ul class="social">
-                        <li>
-                            <a href="#" class="facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="facebook">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="facebook">
-                                <i class="fa-brands fa-instagram"></i> </a>
-                        </li>
-                        <li>
-                            <a href="#" class="facebook">
-                                <i class="fa-brands fa-snapchat"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="facebook">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="facebook">
-                                <i class="fa-brands fa-linkedin-in"></i> </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- حمل التطبيق -->
-            <div class="col-lg-2 col-md-6 p-3">
-                <div class="box">
-                    <h3 class="pb-2">حمل التطبيق</h3>
-                    <div class="line">
-                        <img src="images/google-store.png" alt="">
                     </div>
-                    <div class="line">
-                        <img src="images/app-store.png" alt="">
+                </div>
+
+                <!-- تواصل معنا -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="box">
+                        <h3>تواصل معنا</h3>
+
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="facebook">
+                                    <i class="fa-brands fa-instagram"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="facebook">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- حمل التطبيق -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="box">
+                        <h3>حمل التطبيق</h3>
+                        <div class="line">
+                            <img src="images/google-store.png" alt="">
+                        </div>
+                        <div class="line">
+                            <img src="images/app-store.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
         <div class="copyright">
-            <div class="copyright-imgs">
-                <img src="images/payment/jpg/01.jpg" alt="">
-                <img src="images/payment/jpg/02.jpg" alt="">
-                <img src="images/payment/jpg/03.jpg" alt="">
-                <img src="images/payment/jpg/04.jpg" alt="">
+            <div class="container">
+                <div class="copyright-title">
+                    <div class="copyright-taxes">
+                        <h5>رقم السجل التجاري 1010705691 — الرقم الضريبي 310534949600003</h5>
+                    </div>
+                    <div class="copyright-text">
+                        <h5>2022 © جميع الحقوق محفوظة لهيبر تن</h5>
+                    </div>
+                </div>
             </div>
-            <div class="copyright-text">
-                <h5>2022 © جميع الحقوق محفوظة لهيبر تن</h5>
-                <p>رقم السجل التجاري 1010705691 — الرقم الضريبي 310534949600003</p>
-            </div>
+
+
         </div>
 
 
     </div>
-    <!-- End footer (11) -->
+    <!-- End footer-->
 
 
 
