@@ -283,7 +283,7 @@ button:focus {
 
 /***** SUGGEST PART START السليد الكرت *****/
 .suggest-slider {
-  padding: 10px;
+  padding: 10px 3px;
   background-color: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
 
