@@ -30,7 +30,7 @@
   --body: #f5f6f7;
   --border: #e8e8e8;
   --heading: #39404a;
-  --primary: #012f62;
+  --primary: #19274c;
   --primary-bshadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
   --primary-tshadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
 }
@@ -174,28 +174,23 @@ button:focus {
 =========================================*/
 /******* header top START *******/
 .header-top {
-  text-align: center;
-  position: relative;
-  border-radius: 0;
-  background: var(--primary);
   margin: 0;
+  padding: 5px;
+  border-radius: 0;
+  position: relative;
+  text-align: center;
+  background: var(--primary);
 }
 
 .header-top p {
   font-size: 15px;
-  letter-spacing: 0.3px;
   color: var(--white);
 }
 
 .header-top p a {
   font-size: 12px;
-  font-weight: 500;
   padding: 0px 12px;
-  /* border-radius: 3px; */
-  line-height: 24px;
   margin-right: 10px;
-  margin-bottom: 2px;
-  letter-spacing: 0.3px;
   text-transform: uppercase;
   background: var(--white);
   color: var(--primary);
@@ -419,7 +414,7 @@ button:focus {
 }
 
 .dropdown-position-list li a i {
-margin-left: 5px;
+  margin-left: 5px;
 }
 
 .header-part.active .header-form {
@@ -805,7 +800,7 @@ margin-left: 5px;
 .cart-sidebar {
   position: fixed;
   top: 0px;
-  right: -450px;
+  left: -450px;
   width: 400px;
   height: 100vh;
   z-index: 5;
@@ -815,7 +810,7 @@ margin-left: 5px;
 }
 
 .cart-sidebar.active {
-  right: 0px;
+  left: 0px;
 }
 
 .cart-header {
@@ -846,7 +841,7 @@ margin-left: 5px;
 .cart-close {
   position: absolute;
   top: 50%;
-  left: -18px;
+  right: -18px;
   transform: translateY(-50%);
 }
 
@@ -872,7 +867,7 @@ margin-left: 5px;
 .cart-list {
   height: 100%;
   padding: 0px 15px;
-  max-height: calc(100vh - 210px);
+  max-height: calc(100vh - 140px);
   overflow-y: scroll;
 }
 
@@ -923,14 +918,14 @@ margin-left: 5px;
   text-align: center;
   border-radius: 5px;
   display: inline-block;
-  color: var(--red);
+  color: red;
   background: rgba(255, 255, 255, 0.9);
   transition: all linear .3s;
 }
 
 .cart-media button i:hover {
   color: var(--white);
-  background: var(--red);
+  background: red;
 }
 
 .cart-info-group {
@@ -1052,56 +1047,8 @@ margin-left: 5px;
 }
 
 .cart-footer {
-  padding: 20px 15px 0px;
+  padding: 10px 15px 0px;
   text-align: center;
-  box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.08);
-}
-
-.coupon-btn {
-  font-weight: 500;
-  margin-bottom: 20px;
-  color: var(--primary);
-  text-shadow: var(--primary-tshadow);
-}
-
-.coupon-btn:hover {
-  text-decoration: underline;
-}
-
-.coupon-form {
-  padding: 3px;
-  border-radius: 8px;
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--border);
-  box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.1);
-  transition: all linear .3s;
-  display: none;
-}
-
-.coupon-form:focus-within {
-  border-color: var(--primary);
-}
-
-.coupon-form input {
-  width: 100%;
-  height: 38px;
-  padding: 0px 15px;
-}
-
-.coupon-form button span {
-  width: 100px;
-  height: 38px;
-  font-size: 14px;
-  line-height: 38px;
-  border-radius: 8px;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
-  background: var(--primary);
 }
 
 .cart-checkout-btn {
@@ -1136,7 +1083,7 @@ margin-left: 5px;
 
 @media (max-width: 450px) {
   .cart-sidebar {
-    right: 0px;
+    left: 0px;
     width: 100%;
     height: 100vh;
     transform: scale(0);
